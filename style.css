@@ -1,0 +1,450 @@
+body {
+    background-color: #fedfdd;
+}
+
+img{
+    user-select: none;
+    user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #fedfdd; /* soft pink */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.navSpacer {
+    font-family: "milkyNiceCLean";
+    color: #245BB5;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 6px 16px 6px 22px;
+}
+
+.logo {
+    width: 100%;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 16px 6px 22px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #245BB5;
+  display: block;
+    font-family: "milkyNiceClean"
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #F2D066;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 10px 10px;
+    background-color: #FFF5F5;
+    border-radius: 5px;
+    
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+    .cat {font-size: 20px;}
+}
+.catHome {font-size: 20px;}
+}
+
+
+.imageContainer {
+    margin-top: 15px;
+}
+
+.imageContainerCentered {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* INACTIVE -- makes image bigger on hover
+.imageContainer > img:hover {
+  width: 40%;
+    min-width: 400px;
+    max-width: 600px;
+}
+*/
+
+
+
+
+/* fonts */
+
+@font-face {
+    font-family: "typefessePleine";
+    src: url("fonts/Typefesse_Pleine.woff");
+}
+
+@font-face {
+    font-family: "typefesseClaire";
+    src: url("fonts/Typefesse_Claire-Obscure.woff");
+}
+
+@font-face {
+    font-family: "typefesseClaire";
+    src: url("fonts/Typefesse_Claire-Obscure.woff");
+}
+
+@font-face {
+    font-family: "milkyNice";
+    src: url("fonts/MilkyNice.otf");
+}
+
+@font-face {
+    font-family: "milkyNiceClean";
+    src: url("fonts/MilkyNice-Clean.otf");
+}
+
+@font-face {
+    font-family: "comicsans";
+    src: url("fonts/comicbd.ttf");
+}
+
+
+/*Category header styling*/
+.cat {
+    font-family: "typefessePleine";
+    font-weight: 1;
+    font-size: 50px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    color: #245BB5;
+}
+
+.catHome{
+    font-family: "typefessePleine";
+    font-weight: 1;
+    font-size: 50px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    color: #245BB5;
+    text-align: center;
+}
+
+.title {
+    font-family: "milkyNiceClean";
+    color: #245BB5;
+    font-weight: 100;
+    margin-top: 0px;
+
+    margin-bottom: 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.title a{
+    color: #245BB5;
+    opacity: 50%;
+    text-decoration: none;
+}
+
+.title a:hover{
+    color: #F2D066;
+    opacity: 100%;
+}
+
+.medium {
+    font-family: "milkyNiceClean";
+    color: #245BB5;
+    font-size: 12px;
+    opacity: 50%;
+    font-weight: 100;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.borderSpacer {
+  height: 5px;
+  width: 100%;
+  background-color: #fedfdd;
+    border-radius: 15px
+}
+
+.navfooter {
+    position: fixed;
+    width: 160px;
+    bottom: 10px;
+    font-size: 9px;
+    font-family: "milkyNiceClean";
+    color: #D179AF;
+    opacity: 55%;
+    padding: 6px 16px 6px 16px;
+}
+
+.navfooter a{
+    color: #7166D1;
+    opacity:70%;
+    padding: 0px;
+    font-size: 9px;
+    display: inline;
+}
+
+.navfooter a:hover{
+    color: #7166D1;
+    opacity: 100%;
+}
+
+.desCopy{
+    font-size: 12px;
+    display: inline;
+}
+
+.about{
+    margin-bottom: -15px;
+    line-height: 25px;
+}
+
+.about a{
+    font-size: 20px;
+    color: #245BB5;
+}
+
+.abouttext{
+    width: 50%;
+    max-width: 700px;
+    min-width: 300px;
+    text-align: justify
+}
+.copyright {
+    font-family: "comicsans";
+    display: inline;
+    font-size: 12px;
+}
+
+.portrait{
+    width: 50%;
+    min-width: 300px;
+    max-width: 700px;
+}
+
+.homeimg{
+    height: 325px;
+    margin-right:-35px;
+    margin-bottom: -20px;
+}
+
+.exhibitionList{
+    font-family: "milkyNiceClean";
+    color: #245BB5;
+    font-weight: 100;
+    margin-top: -10px;
+    line-height: 22px;
+    margin-bottom: 0px;
+    border-radius: 0px 0px 5px 5px;
+    opacity: 80%;
+}
+
+
+
+
+
+
+
+
+
+/* Copy/pasted CSS from the JS code for viewing images full screen */
+
+/* ddfullscreenimageviewer */
+body.revealviewer {
+  overflow: hidden;
+}
+#fullscreencanvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  background: #E8FFE8;
+  z-index: 9000;
+  pointer-events: none;
+  display: block;
+  transition: opacity .3s, visibility 0s .3s;
+}
+body.revealviewer #fullscreencanvas {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transition: opacity .5s, visibility 0s .0s;
+}
+#fullscreenimagearea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#fullscreencanvas img {
+  position: relative;
+  cursor: pointer;
+  transition: all .5s;
+}
+div#closeviewer {
+/* Large x close button  */
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  display: block;
+  position: fixed;
+  cursor: pointer;
+  text-indent: -1000px;
+  z-index: 100000;
+  top: 10px;
+  right: 10px;
+}
+div#closeviewer::before, div#closeviewer::after {
+/* render large cross inside close button */
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background: #245BB5;
+  top: 50%;
+  opacity: 0;
+  margin-top: -3px;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: transform .5s, opacity .5s;
+}
+body.revealviewer div#closeviewer::before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 1;
+}
+body.revealviewer div#closeviewer::after {
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  opacity: 1;
+}
+/* Loading DIV CSS */
+#fullimageloadingdiv, #zoomioloadingdiv {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  pointer-events: none;
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+#fullimageloadingdiv .spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #E8FFE8;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+/* zoomio */
+#zoomiocontainer {
+/* container containing enlarged image (native sized image) */
+  position: absolute;
+  z-index: 9999;
+  overflow: hidden;
+  background: #E8FFE8;
+  visibility: visible;
+}
+#zoomiocontainer img {
+/* image inside zoom container */
+  width: auto;
+  height: auto !important;
+  position: absolute !important;
+  display: block !important;
+  cursor: move;
+}
+.disablepointer {
+  pointer-events: none;
+}
+#zoomiocontainer.mobileclass {
+/* CSS class added to zoom container on mobile OS */
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+#zoomioloadingdiv .spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: #333;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+/* opsional */
+.thumbnails {
+  cursor: zoom-in;
+    height: 300px;
+}
